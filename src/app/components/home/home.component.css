@@ -1,0 +1,154 @@
+body {}
+
+.container {
+
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f8f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00103D;
+}
+
+.header .buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.header button {
+  padding: 10px 20px;
+  border: 2px solid #00103D;
+  background-color: transparent;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.header button.signup {
+  background-color: #00103D;
+  color: white;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  /* Increase gap between elements */
+  position: relative;
+}
+
+.left-image {
+  position: absolute;
+  left: -180px;
+  /* Adjust this value as needed */
+  top: 20%;
+  /* Center vertically */
+  transform: translateY(-50%);
+  /* Center vertically */
+}
+
+#leftImageStyle {
+  width: 150px;
+  height: auto;
+  /* Maintain aspect ratio */
+}
+
+.right-image {
+  position: absolute;
+  right: -200px;
+  /* Adjust this value as needed */
+  top: 70px;
+  /* Adjust this value as needed */
+}
+
+#rightImageStyle {
+  width: 150px;
+  height: auto;
+  /* Maintain aspect ratio */
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.text h1 {
+  font-size: 2.5rem;
+  color: #00103D;
+  margin: 0;
+  text-align: center;
+  line-height: 1.2;
+  /* Adjust line-height for better spacing */
+  width: 400px;
+  /* Set width to control line breaks */
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.search-container input {
+  padding: 10px 40px 10px 45px;
+  font-size: 1rem;
+  border-radius: 30px;
+  border: none;
+  /* Removed the border */
+  width: 300px;
+  position: relative;
+  box-shadow: none;
+  /* Ensure no box-shadow */
+  outline: none;
+  /* Remove default outline on focus */
+}
+
+.search-container .icon-input__icon {
+  right: 10px;
+  position: absolute;
+  color: #00103D;
+  top: 20%;
+}
+
+.search-container .search-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+}
+
+.search-container button {
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 30px;
+}
