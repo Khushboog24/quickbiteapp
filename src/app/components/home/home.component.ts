@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+  howItWorks: boolean = true;
 
+  toggleHowItWorks() {
+    this.howItWorks = !this.howItWorks;
+    console.log('HomeComponent: toggleHowItWorks', this.howItWorks);
+  }
 }
