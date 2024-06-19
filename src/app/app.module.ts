@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { HowItWorksComponent } from './components/how-it-works/how-it-works.component';
 import { WorkWithQbComponent } from './components/work-with-qb/work-with-qb.component';
 import { DownloadAppComponent } from './components/download-app/download-app.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { DownloadAppComponent } from './components/download-app/download-app.com
     HomeComponent,
     HowItWorksComponent,
     WorkWithQbComponent,
-    DownloadAppComponent
+    DownloadAppComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
