@@ -1,3 +1,4 @@
+<div class="main-container">
 <div class="container">
   <div class="header">
     <div class="logo">QUICK BITE</div>
@@ -33,112 +34,9 @@
   </div>
   <!-- <div class="sectionBreak"></div> -->
 
-  <div class="how-it-works">
-    <div class="how-header">
-      <h2 id="heading">How it works</h2>
-      <span *ngIf="howItWorks" id="headingIcon" (click)="toggleHowItWorks()"><i class="material-icons">expand_more</i></span>
-      <span *ngIf="!howItWorks" id="headingIcon" (click)="toggleHowItWorks()"><i class="material-icons">expand_less</i></span>
-    </div>
-    <!-- <div class="sectionBreak"></div> -->
-    <div *ngIf="howItWorks" class="body" id="howItWorksBody">
-      <div class="steps">
-        <div class="step">
-          <img src="https://assets.api.uizard.io/api/cdn/stream/f6a8cb56-e0e8-498f-9eee-fed4b6f8b682.png" alt="Step 1">
-          <h3>Step 1</h3>
-          <p>Enter your location. Type in your address or pin your location by enabling location services.</p>
-        </div>
-        <div class="step">
-          <img src="https://assets.api.uizard.io/api/cdn/stream/5f37769c-8965-4b45-b0a6-a8b4b184b84a.png" alt="Step 2">
-          <h3>Step 2</h3>
-          <p>Now select a restaurant and a meal item. You're one step closer to the perfect QuickBite.</p>
-        </div>
-        <div class="step">
-          <img src="https://assets.api.uizard.io/api/cdn/stream/dd65eac6-19ac-4570-833a-2feaa7d4ff7e.png" alt="Step 3">
-          <h3>Step 3</h3>
-          <p>Settle your payment. Then, sit back and relax as we make your food ready!</p>
-        </div>
-      </div>
-    </div>
-    <!-- <div class="how-it-works">
-      <h2>How it works</h2>
-      <div class="steps">
-          <div class="step">
-              <img src="https://assets.api.uizard.io/api/cdn/stream/f6a8cb56-e0e8-498f-9eee-fed4b6f8b682.png" alt="Step 1">
-              <h3>Step 1</h3>
-              <p>Enter your location. Type in your address or pin your location by enabling location services.</p>
-          </div>
-          <div class="step">
-              <img src="https://assets.api.uizard.io/api/cdn/stream/5f37769c-8965-4b45-b0a6-a8b4b184b84a.png" alt="Step 2">
-              <h3>Step 2</h3>
-              <p>Now select a restaurant and a meal item. You're one step closer to the perfect QuickBite.</p>
-          </div>
-          <div class="step">
-              <img src="https://assets.api.uizard.io/api/cdn/stream/dd65eac6-19ac-4570-833a-2feaa7d4ff7e.png" alt="Step 3">
-              <h3>Step 3</h3>
-              <p>Settle your payment. Then, sit back and relax as we make your food ready!</p>
-          </div>
-      </div>
-  </div>
-  <div class="work-with-quickbite">
-      <h2>Work with QuickBite</h2>
-      <div class="roles">
-          <div class="role">
-              <img src="https://assets.api.uizard.io/api/cdn/stream/37e9b725-e9ad-467f-bd0e-66840f6b9ded.png" alt="As a rider">
-              <h3>As a rider</h3>
-              <p>Earn money by delivering food from restaurants. All you need is the app and a bike.</p>
-              <button>Ride with us</button>
-          </div>
-          <div class="role">
-              <img src="https://assets.api.uizard.io/api/cdn/stream/81350b5b-cb11-496a-9662-d5b0d7eee41b.png" alt="As a partner">
-              <h3>As a partner</h3>
-              <p>QuickBite helps restaurants grow with marketing, loyalty programs, and more.</p>
-              <button>Partner with us</button>
-          </div>
-          <div class="role">
-              <img src="https://assets.api.uizard.io/api/cdn/stream/71644c0a-e068-4aca-8308-59827b23ba3f.png" alt="As a colleague">
-              <h3>As a colleague</h3>
-              <p>Be part of a team that’s building a top-notch delivery service.</p>
-              <button>Work with us</button>
-          </div>
-      </div>
-  </div>
-  <div class="download-app">
-      <h2>Download our app</h2>
-      <div class="app-info">
-          <img src="https://assets.api.uizard.io/api/cdn/stream/e673eb3d-6d4c-43b8-b125-67ac786dfaf1.png" alt="App">
-          <p>Order easily! Get the most delicious bites delivered to your door with QuickBite. Enjoy exclusive offers and order your favorite cuisines from local restaurants.</p>
-          <button>Download</button>
-      </div>
-  </div>
-  <footer>
-      <div class="footer-content">
-          <div class="column">
-              <h4>Quick Bite</h4>
-          </div>
-          <div class="column">
-              <h4>Social</h4>
-              <ul>
-                  <li><a href="#">Instagram</a></li>
-                  <li><a href="#">Facebook</a></li>
-                  <li><a href="#">Twitter</a></li>
-              </ul>
-          </div>
-          <div class="column">
-              <h4>Help</h4>
-              <ul>
-                  <li><a href="#">Support</a></li>
-                  <li><a href="#">FAQs</a></li>
-              </ul>
-          </div>
-          <div class="column">
-              <h4>Legal</h4>
-              <ul>
-                  <li><a href="#">Terms and Conditions</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-              </ul>
-          </div>
-      </div>
-  </footer> -->
+  <app-how-it-works></app-how-it-works>
 
-  </div>
+  <app-work-with-qb></app-work-with-qb>
+  <app-download-app></app-download-app>
+</div>
 </div>
